@@ -1,5 +1,6 @@
 import streamlit as st # フロントエンドを扱うstreamlitの機能をインポート
 from openai import OpenAI # openAIのchatGPTのAIを活用するための機能をインポート
+import os #
 
 # OpenAI APIの設定
 # Streamlit Cloud用とローカル用の両方に対応
@@ -11,6 +12,8 @@ except (FileNotFoundError, KeyError):
     from dotenv import load_dotenv
     load_dotenv()
     api_key = os.getenv("OPENAI_API_KEY")
+
+print(api_key)
 
 # openAIの機能をclientに代入
 client = OpenAI(api_key=api_key)
