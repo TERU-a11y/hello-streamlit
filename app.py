@@ -16,7 +16,7 @@ except (FileNotFoundError, KeyError):
 print(api_key)
 
 # openAIの機能をclientに代入
-client = OpenAI(api_key=api_key)
+client = OpenAI()
 
 
 # chatGPTが可能な文章のテイストの設定一覧を作成
