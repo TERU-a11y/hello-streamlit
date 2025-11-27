@@ -1,3 +1,4 @@
 openai==2.8.0
 streamlit==1.50.0
-streamlit==python-dotenv
+streamlit
+python-dotenv
